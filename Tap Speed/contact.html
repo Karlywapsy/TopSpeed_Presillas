@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Home </title>
+<style>
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to right, #189633, #083010);
+}
+
+.main-content {
+  height: 350vh; 
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+.topnav {
+  overflow: hidden;
+  padding-top: 20px;
+  background: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 1000; 
+}
+
+.topnav .content {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.topnav a {
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+.topnav img {
+  padding: 6px 16px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.ccontain{
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.header{
+    padding-top: 300px;
+}
+
+
+h1{
+	font-weight: normal;
+	font-size: 4em;
+	margin: 0 auto;
+    padding-top: 120px;
+	width: 500px;
+	color: white;
+	text-align: center;
+}
+
+form{
+	margin: 0 auto;
+	width: 500px;
+	padding-top: 40px;
+	color: white;
+	position: relative;
+
+}
+
+input, textarea{
+	width: 500px;	
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	padding: 10px;
+	
+	font-size: 1em;
+	color: #676767;
+	border: solid 3px #09533b;	
+	
+}
+
+textarea{
+	height: 100px;	
+	resize: none; 
+	overflow: auto;
+}
+input[type="submit"]{
+	color: green;
+	height: 50px;
+	cursor: pointer;
+	margin-top: 30px;
+	font-size: 1.29em;
+}
+
+label{
+	font-size: 1.5em;
+	margin-top: 20px;
+	padding-left: 20px;
+}
+
+</style>
+</head>
+<body>
+  <nav class="topnav">
+    <div class="content">
+      <div>
+      <img src="images/tapssppeeed.png" alt="Logo" width="156" height="48">
+      </div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a class="active" href="contact.html">Contact</a>
+      <a href="developers.html">Developers</a>
+      <a href="rankings.html">Rankings</a>
+    </div>
+  </nav>
+    
+    <header>
+        <h1>Contact us</h1>
+    </header>
+    
+    <div id="form">
+    
+    <div class="forms" id="forms"></div>
+    <div class="formss" id="formss"></div>
+    
+    <form id="waterform" method="post">
+    
+    <div class="formgroup" id="name-form">
+        <label for="name">Your name*</label>
+        <input type="text" id="name" name="name" />
+    </div>
+    
+    <div class="formgroup" id="email-form">
+        <label for="email">Your e-mail*</label>
+        <input type="email" id="email" name="email" />
+    </div>
+    
+    <div class="formgroup" id="message-form">
+        <label for="message">Your message</label>
+        <textarea id="message" name="message"></textarea>
+    </div>
+        <input type="submit" value="Send your message!" />
+    </form>
+    </div>
+    <div class="blank" style="height: 100px; background-color: transparent;"></div>
+    <div class="ccontain">
+      <h5>All Rights Reserved @ 2024</h5>
+    </div>
+
+
+        
+    
+    </body>
+    
+</html> 

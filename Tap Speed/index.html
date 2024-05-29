@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  height: 500px;
+  background: linear-gradient(to right, #189633, #083010);
+}
+
+.topnav {
+  overflow: hidden;
+  padding-top: 20px;
+  background: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 1000; 
+}
+
+.topnav .content {
+  width: 80%;
+  margin: auto;
+  display: flex ;
+  justify-content: space-between;
+}
+
+.topnav a {
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+.topnav img {
+  padding: 6px 16px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.center-image {
+  width: 300px;
+  height: 300px;
+}
+
+.container {
+  background-color: darkgreen;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fcontain{
+  background-color: #189633; 
+  width: 100%; 
+  height: 300px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
+.white-box {
+  background-color: white;
+  width: 270px;
+  height: 300px;
+  margin: 50px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.box-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 300px;
+  padding-bottom: 50px;
+}
+
+.acontain{
+  display: flex;
+  justify-content: center;
+  height: 600px;
+  background-color: green;
+  color: white;
+  padding-top: 80px;
+  padding-bottom: 150px;
+}
+
+.acontain img {
+  transition: transform 0.3s ease;
+}
+
+.acontain img:hover {
+  transform: scale(1.1);
+}
+
+
+.ccontain{
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* */
+.imagecarousel {
+  position: relative;
+  height: 233px;
+  margin-bottom: 30px;
+  display: flex;
+  width: fit-content;
+  gap: 20px;
+}
+
+.imagecarousel img {
+  margin: 0px 0px;
+  box-shadow: 2px 2px 8px #8a8a8a;
+}
+
+.imagecarousel {
+  animation: bannermove 50s linear infinite;
+}
+
+@keyframes bannermove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+#testimonials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width:100%;
+}
+.testimonial-heading{
+  letter-spacing: 1px;
+  margin: 30px 0px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-heading span{
+  font-size: 1.3rem;
+  color: #252525;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.testimonial-box-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width:100%;
+}
+.testimonial-box{
+  width:500px;
+  box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 15px;
+  cursor: pointer;
+}
+.profile-img{
+  width:50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.profile-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.profile{
+  display: flex;
+  align-items: center;
+}
+.name-user{
+  display: flex;
+  flex-direction: column;
+}
+.name-user strong{
+  color: #3d3d3d;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+.name-user span{
+  color: #979797;
+  font-size: 0.8rem;
+}
+.reviews{
+  color: #f9d71c;
+}
+.box-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.client-comment p{
+  font-size: 0.9rem;
+  color: #4b4b4b;
+}
+.testimonial-box:hover{
+  transform: translateY(-10px);
+  transition: all ease 0.3s;
+}
+
+@media(max-width:1060px){
+  .testimonial-box{
+      width:45%;
+      padding: 10px;
+  }
+}
+@media(max-width:790px){
+  .testimonial-box{
+      width:100%;
+  }
+  .testimonial-heading h1{
+      font-size: 1.4rem;
+  }
+}
+@media(max-width:340px){
+  .box-top{
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+  }
+  .reviews{
+      margin-top: 10px;
+  }
+}
+::selection{
+  color: #ffffff;
+  background-color: #252525;
+}
+
+</style>
+</head>
+<body>
+
+  <nav class="topnav">
+    <div class="content">
+      <div>
+      <img src="images/tapssppeeed.png" alt="Logo" width="156" height="48">
+      </div>
+      <a class="active" href="#home">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="developers.html">Developers</a>
+      <a href="rankings.html">Rankings</a>
+    </div>
+  </nav>
+  
+
+<div class="fcontain">
+  <img src="images/tapspedlogo.png" alt="Your Image" style="width: 720px; height:600px; padding-top: 400px;"> 
+</div>
+
+<div class="box-container">
+  <div class="white-box" style="padding: 10px; text-align: center;">
+    <h1 style="font-size: 24px; font-weight: bold;">Beat the Fast</h1>
+    <p style="font-size: 20px;">Set personal goals to beat your previous high score. This will motivate you to 
+      improve your tapping speed. While speed is important, accuracy matters too2. Ensure that your taps are consistent and precise.</p>
+  </div>
+  <div class="white-box" style="padding: 10px; text-align: center;">
+    <h1 style="font-size: 24px; font-weight: bold;">Greatest Tapper</h1>
+    <p style="font-size: 20px;">Tap on the screen as fast as you can. The goal is to tap as many times as possible 
+      within the given time limit. When the time is up, your result, which is the number of taps you made, will automatically appear on the screen.</p>
+  </div>
+  <div class="white-box" style="padding: 10px; text-align: center;">
+    <h1 style="font-size: 24px; font-weight: bold;">Record your Speed</h1>
+    <p style="font-size: 20px;">The results will automatically appear on the screen when the time is up. 
+      This will show your tapping speed, often measured in Taps Per Second (TPS) or Clicks Per Second (CPS).</p>
+  </div>
+</div>
+
+<div class="acontain">
+  <img src="images/splash.png" alt="Image 1" style="width: auto; height: auto; margin-right: 100px;">
+  <img src="images/menu.png" alt="Image 2" style="width: auto; height: auto; margin-right: 100px;">
+  <img src="images/game.png" alt="Image 3" style="width: auto; height: auto;">
+</div>
+
+<div> <h1 style="color: white;"> Available in this countries</h1></div>
+
+<div class="imagecarousel">
+  <img src="images/canada.jpg" alt="" />
+
+  <img src="images/indo.jpg" alt="" />
+
+  <img src="images/japan.png" alt="" />
+
+  <img src="images/us.webp" alt="" />
+  
+
+
+</div>
+
+<section id="testimonials">
+  <div class="testimonial-heading">
+      <span style="color: gold;">Comments</span>
+      <h4 style="color: white;">Positive Ratings</h4>
+  </div>
+  <div class="testimonial-box-container">
+      <div class="testimonial-box">
+          <div class="box-top">
+              <div class="profile">
+                  <div class="profile-img">
+                      <img src="images/user1.jpg" />
+                  </div>
+                  <div class="name-user">
+                      <strong>Liam mendes</strong>
+                      <span>@liammendes</span>
+                  </div>
+              </div>
+              <div class="reviews">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+              </div>
+          </div>
+          <div class="client-comment">
+              <p>Tap Speed is incredibly addictive. I find myself tapping away to beat my own record 
+                every time I play. The simple gameplay keeps me engaged, and the speed recording feature adds a competitive edge.</p>
+          </div>
+      </div>
+      <div class="testimonial-box">
+          <div class="box-top">
+              <div class="profile">
+                  <div class="profile-img">
+                      <img src="images/user2.jpg" />
+                  </div>
+                  <div class="name-user">
+                      <strong>Noah Wood</strong>
+                      <span>@noahwood</span>
+                  </div>
+              </div>
+              <div class="reviews">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+          </div>
+          <div class="client-comment">
+              <p>Tap Speed challenges my reflexes like no other game. It’s a great way to test how fast 
+                I can react, and the satisfaction of achieving a high score is unmatched.</p>
+          </div>
+      </div>
+      <div class="testimonial-box">
+          <div class="box-top">
+              <div class="profile">
+                  <div class="profile-img">
+                      <img src="images/user3.jpg" />
+                  </div>
+                  <div class="name-user">
+                      <strong>Oliver Queen</strong>
+                      <span>@oliverqueen</span>
+                  </div>
+              </div>
+              <div class="reviews">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+              </div>
+          </div>
+          <div class="client-comment">
+              <p>I appreciate the clean and minimalistic design of Tap Speed. The straightforward interface allows 
+                me to focus solely on tapping, without any distractions. Plus, the vibrant colors are visually appealing.</p>
+          </div>
+      </div>
+      <div class="testimonial-box">
+          <div class="box-top">
+              <div class="profile">
+                  <div class="profile-img">
+                      <img src="images/user4.jpg" />
+                  </div>
+                  <div class="name-user">
+                      <strong>Marie Salvo </strong>
+                      <span>@barryallen</span>
+                  </div>
+              </div>
+              <div class="reviews">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+              </div>
+          </div>
+          <div class="client-comment">
+              <p>The speed recording feature encourages friendly competition. I love challenging my
+                 friends to beat my score and see who can tap the fastest. It’s a fantastic social game!</p>
+          </div>
+      </div>
+  </div>
+</section>
+<script src='https://kit.fontawesome.com/c8e4d183c2.js'></script>
+</body>
+</html>
+
+<div class="ccontain">
+  <h5>All Rights Reserved @ 2024</h5>
+</div>
+
+</body>
+</html> 

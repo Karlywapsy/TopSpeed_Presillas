@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+  </head>
+<style>
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to right, #189633, #083010);
+}
+
+.main-content {
+  height: 350vh; 
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+.topnav {
+  overflow: hidden;
+  padding-top: 20px;
+  background: transparent;
+  position: absolute;
+  width: 100%;
+}
+
+.topnav .content {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.topnav a {
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+.topnav img {
+  padding: 6px 16px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.center-image {
+  width: 300px;
+  height: 300px;
+}
+
+.container {
+  background-color: darkgreen;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fcontain{
+  width: 100%; 
+  height: 300px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
+
+
+.ycontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 500px; 
+}
+
+.yimage-container {
+  flex: 1;
+  padding-right: 20px; 
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+.yimage-container img {
+  width: 350px; 
+  height: auto; 
+}
+
+
+.ytext-container {
+  flex: 2;
+  color: white;
+  padding-left: 20px; 
+  width: 400px; 
+}
+
+
+
+@media (max-width: 768px) {
+  .ycontainer {
+    flex-direction: column;
+  }
+}
+
+
+
+
+.xcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px; 
+}
+
+.ximage-container {
+  flex: 1;
+  padding-right: 20px;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+.ximage-container img {
+  width: 350px; 
+  height: auto; 
+}
+
+
+.xtext-container {
+  flex: 2;
+  color: white;
+  padding-left: 20px; 
+  width: 400px; 
+}
+
+
+@media (max-width: 768px) {
+  .xcontainer {
+    flex-direction: column;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+}
+.ccontain{
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+
+</style>
+</head>
+<body>
+  <nav class="topnav">
+    <div class="content">
+      <div>
+      <img src="images/tapssppeeed.png" alt="Logo" width="156" height="48">
+      </div>
+      <a href="index.html">Home</a>
+      <a class="active" href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="developers.html">Developers</a>
+      <a href="rankings.html">Rankings</a>
+    </div>
+  </nav>
+  
+    
+    <div class="main-content">
+      <div class="fcontain">
+        <img src="images/tapspedlogo.png" alt="Your Image" style="width: 720px; height:600px; padding-top: 400px;"> 
+      </div>
+    
+      <div class="ycontainer">
+          <div class="yimage-container">
+            <img src="images/menu.png" alt="Descriptive Image Alt Text">
+          </div>
+          <div class="ytext-container">
+            <p>TAP SPEED is an exhilarating mobile game that challenges your 
+                reflexes and agility. The game is designed with a simple yet
+                 engaging concept: tap the black tiles as they move across your
+                  screen, while avoiding the white tiles. This seemingly simple
+                   task becomes a thrilling challenge as you strive to 
+                   improve your tapping speed and accuracy. </p>
+            <p>The game begins with a grid of black and white tiles. The black 
+                tiles start moving, and your task is to tap them as quickly
+                 and accurately as possible. Each successful tap on a black tile
+                  increases your score, while tapping a white tile or 
+                  missing a black tile can end the game. The goal is to 
+                  achieve the highest score possible within the set time limit.  </p>
+            <p>TAP SPEED is not just about fun and games, it’s also a tool 
+                to improve your hand-eye coordination and reaction speed. 
+                The game’s difficulty increases progressively, pushing you to 
+                tap faster and more accurately. This constant challenge helps 
+                to improve your tapping speed over time, making TAP SPEED a 
+                perfect blend of entertainment and skill development.</p>
+          </div>
+        </div>
+
+        <div class="xcontainer">
+            <div class="xtext-container">
+                <p>The game features a sleek, minimalist design that allows you to 
+                    focus on the gameplay. The contrast between the black and white
+                     tiles adds a visually pleasing element to the game, making
+                     it even more engaging.     </p>
+                <p>In addition to its core gameplay, TAP SPEED also offers a 
+                    variety of features to enhance the player experience. It
+                     includes a leaderboard to track your progress and compare 
+                     your scores with others, multiple difficulty levels to suit
+                      players of all skill levels, and customizable settings to 
+                      adjust the game to your liking. </p>
+                <p>Whether you’re looking for a fun way to pass the time or 
+                    a tool to improve your tapping speed, TAP SPEED is the game
+                     for you. It’s easy to learn, but hard to master. So, are 
+                     you ready to take on the challenge and tap your way to victory?</p>
+              </div>
+            <div class="ximage-container">
+              <img src="images/game.png" alt="Descriptive Image Alt Text">
+            </div>
+            
+          </div>
+    </div>
+    
+    <div class="ccontain">
+      <h5>All Rights Reserved @ 2024</h5>
+    </div>
+
+    
+        
+    
+    </body>
+    
+</html> 
